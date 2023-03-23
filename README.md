@@ -38,7 +38,7 @@ The first two screenshots contain an error: I started the Master with a mutator,
 ![fuzz](https://user-images.githubusercontent.com/62624802/227179906-c2886b1a-23c5-42d2-8ec1-cdd79375db8b.png)
 ![fuzz2](https://user-images.githubusercontent.com/62624802/227184239-90b677dd-940a-4b95-9d17-4d0e0246b9dd.png)
 
-<p> <b>Success</b> In the screenshot below, I fixed the problem described above, and also added a few more instances</p>
+<p> <b>[SUCCESS]</b> In the screenshot below, I fixed the problem described above, and also added a few more instances</p>
 
 ![fuzz4](https://user-images.githubusercontent.com/62624802/227204726-7b14033a-f989-423c-b513-87d8bec3ae29.png)
 
