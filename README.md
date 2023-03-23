@@ -1,6 +1,9 @@
 # fuzzing_test
 My first fuzzing
 
+
+Target: https://github.com/htacg/tidy-html5
+
 My commands:
 
 cd $HOME
@@ -26,4 +29,6 @@ afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -S Slave2 -i htm
 
 Parallel fuzzing
 ![fuzz](https://user-images.githubusercontent.com/62624802/227179906-c2886b1a-23c5-42d2-8ec1-cdd79375db8b.png)
+![fuzz2](https://user-images.githubusercontent.com/62624802/227184239-90b677dd-940a-4b95-9d17-4d0e0246b9dd.png)
+
 
