@@ -21,14 +21,16 @@ cd html_examples
 wget https://filesamples.com/samples/code/html/sample1.html
 wget https://filesamples.com/samples/code/html/sample2.html
 cd ../
-
+export PYTHONPATH=`dirname /home/ald15/AFLplusplus/custom_mutators/examples/test.py`
 export AFL_PYTHON_MODULE=test
 afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -M Master -i html_examples -o out -- ./tidy -o tidy_out -f tidy_err @@
 afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -S Slave1 -i html_examples -o out -- ./tidy -o tidy_out -f tidy_err @@
 afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -S Slave2 -i html_examples -o out -- ./tidy -o tidy_out -f tidy_err @@
 afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -S Slave3 -i html_examples -o out -- ./tidy -o tidy_out -f tidy_err @@
 </pre>
-Parallel fuzzing
+
+Parallel fuzzing:
+
 ![fuzz](https://user-images.githubusercontent.com/62624802/227179906-c2886b1a-23c5-42d2-8ec1-cdd79375db8b.png)
 ![fuzz2](https://user-images.githubusercontent.com/62624802/227184239-90b677dd-940a-4b95-9d17-4d0e0246b9dd.png)
 
