@@ -30,7 +30,7 @@ afl-fuzz -x /home/ald15/AFLplusplus/dictionaries/html_tags.dict -S Slave3 -i htm
 </pre>
 
 Parallel fuzzing:
-!!!<p>
+<p> <b>[ERROR!]</b>
 The first two screenshots contain an error: I started the Master with a mutator, and the others without
 </p>
 ![fuzz](https://user-images.githubusercontent.com/62624802/227179906-c2886b1a-23c5-42d2-8ec1-cdd79375db8b.png)
